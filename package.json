@@ -31,6 +31,7 @@
   },
   "scripts": {
     "start": "ts-node src/App.ts",
-    "test": "jest --coverage --detectOpenHandles"
+    "test": "jest --coverage --detectOpenHandles",
+    "build": "tsc"
   }
 }
