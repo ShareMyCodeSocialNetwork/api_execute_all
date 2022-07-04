@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+  <file path="/Users/davidhenriarnaud/Documents/Esgi/Master1/Projet_Annuel/api_execute_all/src/test/utils.test.ts">
+    <testCase name="Test function UUID Sanity of function " duration="1"/>
+    <testCase name="Test function UUID UUID return 32 characters" duration="1"/>
+  </file>
+</testExecutions>
