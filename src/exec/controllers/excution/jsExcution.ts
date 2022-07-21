@@ -20,7 +20,7 @@ export async function jsExcution(request: Request, response: Response)
     fs.writeFile('js-excution.js', code, function (err) {
         if (err) throw err;
     });
-    exec("docker cp 'js-excution.js' execjs-container:'/' ", (error, stdout, stderr) => {
+    exec('docker cp "js-excution.js" execjs-container:"/" ', (error, stdout, stderr) => {
         if (error) {
             console.log(`error: ${error.message}`);
 
