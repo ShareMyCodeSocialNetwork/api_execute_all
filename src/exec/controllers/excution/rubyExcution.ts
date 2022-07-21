@@ -20,7 +20,7 @@ export async function rubyExcution(request: Request, response: Response)
     fs.writeFile('ruby-excution.rb', code, function (err) {
         if (err) throw err;
     });
-    exec("docker cp 'ruby-excution.rb' execrb-container:'/' ", (error, stdout, stderr) => {
+    exec('docker cp "ruby-excution.rb" execrb-container:"/" ', (error, stdout, stderr) => {
         if (error) {
             console.log(`error: ${error.message}`);
 

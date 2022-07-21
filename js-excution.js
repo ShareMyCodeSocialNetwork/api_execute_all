@@ -1,1 +1,1 @@
-print("cc")
+console.log("cc")

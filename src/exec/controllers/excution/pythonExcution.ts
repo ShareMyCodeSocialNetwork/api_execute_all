@@ -21,7 +21,7 @@ export async function pythonExcution(request: Request, response: Response)
     fs.writeFile('python-excution.py', code, function (err) {
         if (err) throw err;
     });
-    exec("docker cp 'python-excution.py' execpy-container:'/' ", (error, stdout, stderr) => {
+    exec('docker cp "python-excution.py" execpy-container:"/" ', (error, stdout, stderr) => {
         if (error) {
             console.log(`error: ${error.message}`);
 
